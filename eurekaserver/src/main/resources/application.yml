@@ -1,0 +1,14 @@
+server:
+  port: 8861
+spring:
+  application:
+    name: eurekasvr1
+eureka:
+  instance:
+    hostname: eurekasvr1
+  client:
+    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+       defaultZone: http://eurekasvr2:8862/eureka/
+
+
