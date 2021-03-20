@@ -1,0 +1,12 @@
+server:
+  port: 8881
+spring:
+  application:
+    name: SrvConsumer
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://eurekasvr1:8861/eureka/,http://eurekasvr2:8862/eureka/
+
